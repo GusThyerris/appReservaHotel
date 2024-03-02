@@ -2,9 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Redirect;
 use App\Models\Cliente;
+use Illuminate\Http\Request;
+
 class ClienteController extends Controller
 {
     public function showHome(request $request){
