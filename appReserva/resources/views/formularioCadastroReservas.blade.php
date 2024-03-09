@@ -16,40 +16,39 @@
 
         <div class="col-4">
             <label for="inputAddress" class="form-label">ID do Quarto:</label>
-            <input type="number" class="form-control" id="inputIdQuarto" name="idQuarto" placeholder="1234">
+            <input type="number" class="form-control" id="inputIdQuarto" name="numeroQuarto" placeholder="1234">
         </div>
 
         <div class="col-4">
+            <label for="inputAddress" class="form-label">Valor total:</label>
+            <input type="fone" class="form-control" id="inputValorTotal" name="valorTotal" placeholder="100">
+        </div>
+
+        <!-- <div class="col-4">
             <label for="inputAddress" class="form-label">Telefone:</label>
             <input type="fone" class="form-control" id="inputFone" name="fone" placeholder="11 111111111">
-        </div>
+        </div> -->
 
-        <div class="col-md-8">
+        <!-- <div class="col-md-8">
             <label for="inputPassword4" class="form-label">Email:</label>
             <input type="email" class="form-control" id="inputEmail" name="email" placeholder="gusta.nengue@gmail.com">
-        </div>
+        </div> -->
         
         <div class="form-check">
-            <input class="form-check-input" type="radio" name="situacao" id="situacaoPendente" checked>
-            <label class="form-check-label" value="Pendente">
-                Pendente
-            </label>
-        </div>
-        <div class="form-check">
-            <input class="form-check-input" type="radio" name="situacao" id="situacaoPago">
-             <label class="form-check-label" value="Pago">
-                Pago
-            </label>
+            <select class="form-select" name="situacao" id="Default select example">
+                <option selected value="Pendente">Pendente</option>
+                <option value="Pago">Pago</option>
+            </select>
         </div>
 
         <div class="col-md-6">
-            <label for="inputPassword4" class="form-label">Email:</label>
-            <input type="date" class="form-control" id="dataEntrada" name="dataEntrada" placeholder="gusta.nengue@gmail.com">
+            <label for="inputPassword4" class="form-label">Data de entrada:</label>
+            <input type="date" class="form-control" id="dataEntrada" name="dataEntrada" >
         </div>
 
         <div class="col-md-6">
-            <label for="inputPassword4" class="form-label">Email:</label>
-            <input type="date" class="form-control" id="dataSaida" name="dataSaida" placeholder="gusta.nengue@gmail.com">
+            <label for="inputPassword4" class="form-label">Data de saída:</label>
+            <input type="date" class="form-control" id="dataSaida" name="dataSaida" >
         </div>
         
         <div class="col-12">

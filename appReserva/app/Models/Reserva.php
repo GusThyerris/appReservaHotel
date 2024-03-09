@@ -9,10 +9,12 @@ class Reserva extends Model
 {
     use HasFactory;
     protected $fillable = [
-        'idcliente',
-        'idfuncionario',
-        'idquarto',
+        'idCliente',
+        'idFuncionario',
+        'numeroQuarto',
         'situacao',
-        'dataSaida'
+        'valorTotal',
+        'dataSaida',
+        'dataEntrada'
     ];
 }

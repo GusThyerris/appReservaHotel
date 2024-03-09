@@ -6,17 +6,20 @@
 @csrf
         <div class="col-md-6">
             <label for="inputEmail4" class="form-label">Número do quarto:</label>
-            <input type="number" class="form-control" id="inputNum" name="numero" placeholder="1, 2, 3..." >
+            <input type="number" class="form-control" id="inputNum" name="numeroQuarto" placeholder="1, 2, 3..." >
         </div>
         
         <div class="col-6">
             <label for="inputAddress" class="form-label">Valor:</label>
-            <input type="number" class="form-control" id="inputValue" name="valor" placeholder="1234">
+            <input type="number" class="form-control" id="inputValue" name="valorDiaria" placeholder="1234">
         </div>
 
-        <div class="col-md-12">
-            <label for="inputPassword4" class="form-label">Tipo:</label>
-            <input type="text" class="form-control" id="inputType" name="tipo" placeholder="suíte">
+        <div class="col-6">
+            <select name="tipoQuarto" arial-label="Default select example">
+                <option value="Clase A+">Classe A+</option>
+                <option value="Comercial">Comercial</option>
+                <option value="Suite">Suite</option>
+            </select>
         </div>
 
         <div class="col-12">

@@ -13,10 +13,11 @@ class QuartoController extends Controller
     }
 
     public function cadQuarto(Request $request){
+        
         $dadosValidos = $request -> validate([
             'numero' => 'integer|required',
             'tipo' => 'string|required',
-            'valor' => 'float|required'
+            'valor' => 'numeric|required'
         ]);
 
         Quarto::create($dadosValidos);

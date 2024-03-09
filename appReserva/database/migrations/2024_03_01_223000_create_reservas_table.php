@@ -13,13 +13,14 @@ return new class extends Migration
     {
         Schema::create('reservas', function (Blueprint $table) {
             $table->id();
-            $table->integer('idcliente');
-            $table->integer('idfuncionario');
-            $table->integer('idquarto');
+            $table->integer('idCliente');
+            $table->integer('idFuncionario');
+            $table->integer('numeroQuarto');
             $table->enum('situacao', ['Pago', 'Pendente']);
-            $table->double('valortotal');
-            $table->date('datasaida');
-            $table->date('dataentrada');
+            $table->decimal('valortotal', 8, 2);
+            $table->date('dataSaida');
+            $table->date('dataEntrada');
+            $table->timestamps();
         });
     }
 
