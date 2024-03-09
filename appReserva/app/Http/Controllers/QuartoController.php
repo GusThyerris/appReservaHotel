@@ -26,4 +26,8 @@ class QuartoController extends Controller
 
     }
 
+    public function gerenciarQuarto(){
+        return view('gerenciarQuarto');
+    }
+
 }

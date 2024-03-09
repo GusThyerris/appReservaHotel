@@ -25,4 +25,8 @@ class FuncionarioController extends Controller
 
     }
 
+    public function gerenciarFuncionario(){
+        return view('gerenciarFuncionario');
+    }
+
 }

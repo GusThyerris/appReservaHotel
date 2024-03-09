@@ -29,4 +29,8 @@ class ReservaController extends Controller
         return Redirect::route('home');
 
     }
+
+    public function gerenciarReserva(){
+        return view('gerenciarReserva');
+    }
 }
