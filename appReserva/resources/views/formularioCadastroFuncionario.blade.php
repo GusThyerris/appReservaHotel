@@ -9,19 +9,16 @@
             <input type="text" class="form-control" id="inputNome" name="nome" placeholder="Gustavo" >
         </div>
 
-        <div class="col-md-6">
-            <label for="inputPassword4" class="form-label">Email:</label>
-            <input type="email" class="form-control" id="inputEmail" name="email" placeholder="gusta.nengue@gmail.com">
+        <div class="col-6">
+            <label for="inputAddress" class="form-label">Função:</label>
+            <input type="func" class="form-control" id="inputFunc" name="func" placeholder="Função">
         </div>
 
-        <div class="col-12">
-            <label for="inputAddress" class="form-label">Telefone:</label>
-            <input type="fone" class="form-control" id="inputFone" name="fone" placeholder="11 111111111">
         </div>
-
         <div class="col-12">
             <button type="submit" class="btn btn-primary">Cadastrar</button>
         </div>
+
     </form>
 </section>
 

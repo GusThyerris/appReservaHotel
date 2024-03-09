@@ -15,12 +15,13 @@ class ReservaController extends Controller
 
     public function cadReserva(Request $request){
         $dadosValidos = $request -> validate([
-            'idcliente' => 'integer|required',
-            'idfuncionario' => 'integer|required',
-            'idquarto' => 'integer|required',
-            'situacao' => 'enum|required',
-            'datasaida' => 'date|required',
-            'dataentrada' => 'timestamp|required',
+            'idCliente' => 'integer|required',
+            'idFuncionario' => 'integer|required',
+            'numeroQuarto' => 'integer|required',
+            'situacao' => 'string|required',
+            'valorTotal' => 'numeric|required',
+            'dataSaida' => 'date|required',
+            'dataEntrada' => 'date|required'
         ]);
 
         Reserva::create($dadosValidos);
