@@ -30,7 +30,22 @@ class ReservaController extends Controller
         return Redirect::to('/');
     }
 
-    public function gerenciarReserva(){
+    public function gerenciarReservaShow(){
         return view('gerenciarReserva');
+    }
+
+    public function gerenciarReserva(Request $request){
+        $dadosReserva = Reserva::query();
+        $dadosReserva->when($request->numero, function($query, $valor){
+            $query->where('numeroReserva', 'like','%'.$valor.'%');
+        });
+        $dadosReserva = $dadosReserva->get();
+
+        return view('gerenciarReserva',['registroReservas' => $dadosReserva]);
+    }
+
+    public function destroy(Quarto $id){
+        $id->delete();
+        return Redirect::to('/');
     }
 }

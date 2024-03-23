@@ -9,12 +9,12 @@
 
     <div class="col-md-12">
       <label for="inputNome" class="form-label">Nome:</label>
-      <input name="nome" type="text" class="form-control" id="inputNome" placeholder="Leonardo Lucas">
+      <input name="nome" type="text" class="form-control" id="inputNome" placeholder="Gustavo Thyerris">
     </div>
 
     <div class="col-12">
       <label for="inputFuncao" class="form-label">Função</label>
-      <input name="funcao" type="text" class="form-control" id="inputFuncao" placeholder="Recepcionista">
+      <input name="funcao" type="text" class="form-control" id="inputFuncao" placeholder="Desenvolvedor">
     </div>
 
     <div class="col-12">

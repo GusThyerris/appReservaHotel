@@ -8,7 +8,7 @@
     <form method="get" action="{{route('gerenciar-funcionario')}}">
       <div class="row center">
         <div class="col">
-          <input type="text" id="nome" name="nome" class="form-control" placeholder="Digite dados do Funcionário" aria-label="First name">
+          <input type="text" id="nome" name="nome" class="form-control" placeholder="Digite os dados do Funcionário" aria-label="First name">
         </div>
         <div class="col">
           <button type="submit" class="btn btn-info">Buscar</button>

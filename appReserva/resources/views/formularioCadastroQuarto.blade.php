@@ -11,7 +11,7 @@
 
       <div class="col-md-12">
         <label for="inputNumero" class="form-label">Número:</label>
-        <input name="numeroQuarto" type="number" class="form-control" id="inputNumero" placeholder="136">
+        <input name="numeroQuarto" type="number" class="form-control" id="inputNumero" placeholder="123">
       </div>
 
       <label for="tipo">Tipo:</label>
@@ -23,7 +23,7 @@
 
       <div class="col-md-6">
         <label for="inputValor" class="form-label">Valor:</label>
-        <input name="valorDiario" type="number" class="form-control" id="inputValor" placeholder="200,00">
+        <input name="valorDiario" type="number" class="form-control" id="inputValor" placeholder="500">
       </div>
 
       <div class="col-12">

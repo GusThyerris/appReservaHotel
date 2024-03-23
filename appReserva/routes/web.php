@@ -10,7 +10,7 @@ use App\Http\Controllers\ReservaController;
 // ----------------------------- \\
 Route::get("/",[ClienteController::class, 'showHome']);
 
-// Grupo de Cliente
+// Cliente
 Route::post('/cadastro-cliente', [ClienteController::class,'cadCliente'])->name('envia-db-clie');
 Route::get('/cadastro-cliente',[ClienteController::class,'showformularioCadastro']);
 Route::get('/gerenciar-cliente',[ClienteController::class,'gerenciarClienteShow'])->name('mostrar-cliente');
@@ -19,7 +19,7 @@ Route::get('/gerenciar-cliente', [ClienteController::class, 'gerenciarCliente'])
 Route::put('/alterar-cliente/{id}', [ClienteController::class, 'alterClie'])->name('alterar-cliente');
 Route::delete('/apagar-cliente/{id}', [ClienteController::class, 'destroy'])->name('apagar-cliente');
 
-// Grupo de Funcionario
+// Funcionario
 Route::get('/cadastro-funcionario',[FuncionarioController::class,'showformularioCadastroFun']);
 Route::post('/cadastro-funcionario', [FuncionarioController::class,'cadFunc'])->name('envia-db-func');
 Route::get('/gerenciar-funcionario',[FuncionarioController::class,'gerenciarFuncionarioShow'])->name('mostrar-funcionario');
@@ -27,7 +27,7 @@ Route::get('/gerenciar-funcionario',[FuncionarioController::class,'gerenciarFunc
 Route::get('/gerenciar-funcionario', [FuncionarioController::class, 'gerenciarFuncionario'])->name('gerenciar-funcionario');
 Route::delete('/apagar-funcionario/{id}', [FuncionarioController::class, 'destroy'])->name('apagar-funcionario');
 
-// Grupo de Quartos
+// Quartos
 Route::get('/cadastro-quarto',[QuartoController::class,'showformularioCadastroQuarto']);
 Route::post('/cadastro-quarto', [QuartoController::class,'cadQuarto'])->name('envia-db-quarto');
 Route::get('/gerenciar-quarto',[QuartoController::class,'gerenciarQuartoShow'])->name("mostrar-quarto");
@@ -35,8 +35,12 @@ Route::get('/gerenciar-quarto',[QuartoController::class,'gerenciarQuartoShow'])-
 Route::get('/gerenciar-quarto', [QuartoController::class, 'gerenciarQuarto'])->name('gerenciar-quarto');
 Route::delete('/apagar-quarto/{id}', [QuartoController::class, 'destroy'])->name('apagar-quarto');
 
-// Grupo da Reserva
+// Reserva
 Route::get('/cadastro-reserva',[ReservaController::class,'showformularioCadastroReserva']);
 Route::post('/cadastro-reserva', [ReservaController::class,'cadReserva'])->name('envia-db-reserva');
-Route::get('/gerenciar-reserva',[ReservaController::class,'gerenciarReserva']);
+Route::get('/gerenciar-reserva',[ReservaController::class,'gerenciarReserva']->name('mostrar-reserva'));
+
+Route::get('/gerenciar-reserva', [ReservaController::class, 'gerenciarreserva'])->name('gerenciar-reserva');
+Route::delete('/apagar-reserva/{id}', [ReservaController::class, 'destroy'])->name('apagar-reserva');
+
 

@@ -9,7 +9,7 @@
 
     <div class="col-md-3">
       <label for="idcliente" class="form-label">Código do Cliente:</label>
-      <input name="idcliente" type="number" class="form-control" id="idcliente" placeholder="101">
+      <input name="idcliente" type="number" class="form-control" id="idcliente" placeholder="123">
     </div>
 
     <div class="col-md-9">
@@ -19,7 +19,7 @@
 
     <div class="col-md-3">
       <label for="idfuncionario" class="form-label">Código do Funcionario:</label>
-      <input name="idfuncionario" type="number" class="form-control" id="idfuncionario" placeholder="101">
+      <input name="idfuncionario" type="number" class="form-control" id="idfuncionario" placeholder="123">
     </div>
 
     <div class="col-md-9">
@@ -29,27 +29,27 @@
 
     <div class="col-md-3">
       <label for="numeroquarto" class="form-label">Número do Quarto:</label>
-      <input name="numeroquarto" type="text" class="form-control" id="numeroquarto" placeholder="306">
+      <input name="numeroquarto" type="text" class="form-control" id="numeroquarto" placeholder="123">
     </div>
     
     <div class="col-md-3">
       <label for="vdiaria" class="form-label">Valor da diária</label>
-      <input name="vdiaria" type="text" disabled class="form-control" id="vdiaria" placeholder="R$">
+      <input name="vdiaria" type="text" disabled class="form-control" id="vdiaria" placeholder="50">
     </div>
     
     <div class="col-md-6">
       <label for="tipoquarto" class="form-label">Tipo do quarto:</label>
-      <input disabled name="tipoquarto" type="text" class="form-control" id="inputTipoQuarto" placeholder="...">
+      <input disabled name="tipoquarto" type="text" class="form-control" id="inputTipoQuarto" placeholder="">
     </div>
 
     <div class="col-md-6">
       <label for="inputEntrada" class="form-label">Data entrada:</label>
-      <input name="dataEntrada" type="date" class="form-control" id="inputEntrada" placeholder="Leonardo Lucas">
+      <input name="dataEntrada" type="date" class="form-control" id="inputEntrada" placeholder="Gustavo Thyerris">
     </div>
 
     <div class="col-6">
       <label for="inputSaida" class="form-label">Data saída:</label>
-      <input name="dataSaida" type="date" class="form-control" id="inputSaida" placeholder="leo007@gmail.com">
+      <input name="dataSaida" type="date" class="form-control" id="inputSaida" placeholder="gusthyerris@gmail.com">
     </div>
 
     <div class="input-group mb-3">
