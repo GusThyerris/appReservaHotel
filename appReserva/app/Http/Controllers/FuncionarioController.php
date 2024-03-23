@@ -2,27 +2,43 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Support\Facades\Redirect;
 use App\Models\Funcionario;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Redirect;
 
 class FuncionarioController extends Controller
 {
-    public function showFormularioFuncionario(request $request){
-        return view("formularioCadastroFuncionario");
-    }
+    public function showFormularioCadastroFun(Request $request){
+        return view("formularioCadastroFun");
+        }
 
-    public function cadFuncionario(Request $request){
-        $dadosValidos = $request -> validate([
+    public function cadFunc(Request $request){
+        $dadosValidos = $request->validate([
             'nome' => 'string|required',
-            'email' => 'string|required',
-            'fone' => 'string|required'
+            'funcao' => 'string|required',
         ]);
 
         Funcionario::create($dadosValidos);
+        return Redirect::to('/');
+    }
 
-        return Redirect::route('home');
+    public function gerenciarFuncionarioShow(){
+        return view('gerenciarFuncionario');
+    }
 
+    public function gerenciarFuncionario(Request $request){
+        $dadosFunc = Funcionario::query();
+        $dadosFunc->when($request->nome, function($query, $valor){
+            $query->where('nome', 'like','%'.$valor.'%');
+        });
+        $dadosFunc = $dadosFunc->get();
+
+        return view('gerenciarFuncionario',['registroFuncionarios' => $dadosFunc]);
+    }
+
+    public function destroy(Funcionario $id){
+        $id->delete();
+        return Redirect::to('/');
     }
 
 }

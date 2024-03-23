@@ -5,16 +5,17 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Reserva extends Model
+class reserva extends Model
 {
     use HasFactory;
+
     protected $fillable = [
-        'idCliente',
-        'idFuncionario',
-        'numeroQuarto',
+        'idcliente',
+        'idfuncionario',
+        'numeroquarto',
         'situacao',
-        'valorTotal',
+        'valortotal',
+        'dataEntrada',
         'dataSaida',
-        'dataEntrada'
     ];
 }

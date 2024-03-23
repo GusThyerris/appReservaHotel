@@ -13,20 +13,18 @@ return new class extends Migration
     {
         Schema::create('reservas', function (Blueprint $table) {
             $table->id();
-            $table->integer('idCliente');
-            $table->integer('idFuncionario');
-            $table->integer('numeroQuarto');
+            $table->integer('idcliente');
+            $table->integer('idfuncionario');
+            $table->integer('numeroquarto');
             $table->enum('situacao', ['Pago', 'Pendente']);
-            $table->decimal('valortotal', 8, 2);
-            $table->date('dataSaida');
+            $table->double('valortotal', 8, 2);
             $table->date('dataEntrada');
+            $table->date('dataSaida'); 
             $table->timestamps();
         });
     }
 
-    /**
-     * Reverse the migrations.
-     */
+
     public function down(): void
     {
         Schema::dropIfExists('reservas');
