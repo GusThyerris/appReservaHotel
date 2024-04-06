@@ -83,7 +83,7 @@ Este projeto está licenciado sob a Licença MIT. Consulte o arquivo LICENSE par
 
 ## Contato
 
-Se você tiver alguma dúvida ou sugestão, sinta-se à vontade para entrar em contato através do [email](gustavothyerrisdonascimentooli@gmail.com).
+Se você tiver alguma dúvida ou sugestão, sinta-se à vontade para entrar em contato através do email: ``gustavothyerrisdonascimentooli@gmail.com`` .
 
 
 
